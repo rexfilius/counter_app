@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -47,7 +48,9 @@ class _HomeScreenState extends State<HomeScreen> {
             Text(
               '$_counter',
               style: const TextStyle(
-                fontSize: 32,
+                fontSize: 40,
+                decoration: TextDecoration.underline,
+                decorationStyle: TextDecorationStyle.solid,
                 color: Colors.black,
               ),
             ),
@@ -69,7 +72,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: const Icon(Icons.add),
           ),
         ],
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ),
     );
   }
 }
